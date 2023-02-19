@@ -7,11 +7,11 @@ def sender(connection):
     # generate work
     for i in range(100):
         # generate a value
-        value = random()
+        value = random.rand(1)
         # block
         sleep(0.3)
         # send data
-        connection.send(value)
+        connection.send([value,i])
     # all done
     connection.send(None)
     print('Sender: Done', flush=True)
