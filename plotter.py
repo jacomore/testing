@@ -1,7 +1,7 @@
-from multiprocessing import Process, Pipe
 from matplotlib.animation import FuncAnimation
 import matplotlib.pyplot as plt 
 from sender import *
+from multiprocessing import Process, Pipe
 
 def init():
     """ Initialise the Axes of animated image by setting the limits
@@ -79,7 +79,7 @@ if __name__ == '__main__':
     # Like all visible elements in a figure, Axes is an Artist subclass.
     fig, ax = plt.subplots()
     X_MIN = 0
-    X_MAX = 2
+    X_MAX = 5
     Y_MIN = 0
     Y_MAX = 1
     xdata, ydata = [],[]
